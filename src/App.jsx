@@ -5,6 +5,26 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [first, setFirst] = useState('전')
+  const [second, setSecond] = useState('태정')
+  // const [fullName, setFullname] = useState('전태정');
+  const [empty, setEmpty] = useState('??');
+
+  const handleFullnameClick = () => {
+    const newFullname = first + second;
+    setEmpty(newFullname)
+    
+    console.log('풀네임 버튼이 눌렸습니다. 새로운 풀네임:', newFullname);
+  };
+
+  const handleEmptyClick = () => {
+    setEmpty('??')
+
+    console.log('초기화 버튼이 눌렸습니다. 새로운 풀네임:', '??');
+  }
+
+
+
 
   return (
     <>
@@ -21,6 +41,17 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+      <div>
+      <p>{first} + {second} = {empty} 입니다.</p>
+          <button onClick={handleFullnameClick}>
+            풀네임
+          </button>
+
+          <button onClick={handleEmptyClick}>
+            초기화
+          </button>
+          
+      </div>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
