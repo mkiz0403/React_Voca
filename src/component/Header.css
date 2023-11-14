@@ -1,0 +1,17 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link{
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+  margin: 5px;
+  border: 0;
+}
+
+.menu{
+  display: flex;
+}

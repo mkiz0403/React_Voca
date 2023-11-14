@@ -1,0 +1,10 @@
+.list_day{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+
+.list_day li {
+  margin-right: 100px;
+}
