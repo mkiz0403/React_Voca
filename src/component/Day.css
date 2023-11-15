@@ -6,6 +6,7 @@
   width: 80px;
   height: 30px;
   border-radius: 8px;
+  margin-bottom: 5px;
 }
 .del{
   background-color: rgb(207, 82, 82);
@@ -14,4 +15,12 @@
   width: 80px;
   height: 30px;
   border-radius: 8px;
+}
+
+.off{
+  background-color: gray;
+}
+
+td{
+  width: 150px;
 }
